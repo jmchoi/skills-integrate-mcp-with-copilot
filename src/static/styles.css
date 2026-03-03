@@ -16,6 +16,7 @@ body {
 }
 
 header {
+  position: relative;
   text-align: center;
   padding: 20px 0;
   margin-bottom: 30px;
@@ -26,6 +27,50 @@ header {
 
 header h1 {
   margin-bottom: 10px;
+}
+
+.admin-controls {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.icon-button {
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  background: transparent;
+  color: #fff;
+  border-radius: 999px;
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.icon-button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.user-menu {
+  position: absolute;
+  top: 46px;
+  right: 0;
+  background: #fff;
+  color: #222;
+  border-radius: 8px;
+  min-width: 190px;
+  padding: 10px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  z-index: 20;
+}
+
+.user-menu p {
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.user-menu button {
+  width: 100%;
+  margin-top: 6px;
 }
 
 main {
@@ -162,6 +207,55 @@ button {
 
 button:hover {
   background-color: #3949ab;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  background-color: #9ea5d9;
+}
+
+.secondary-button {
+  background: #6c757d;
+}
+
+.secondary-button:hover {
+  background: #5a6268;
+}
+
+.info-note {
+  margin-bottom: 14px;
+  color: #0c5460;
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 4px;
+  padding: 8px 10px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100;
+}
+
+.modal-content {
+  width: 100%;
+  max-width: 420px;
+  background: #fff;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.modal-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.modal-actions button {
+  flex: 1;
 }
 
 .message {
